@@ -4,6 +4,7 @@
 
 A production-ready Next.js 15 dashboard that helps users understand their health insurance policies, detect claim risks, and get AI-powered guidance before hospitalization.
 
+
 ## Features
 
 - **Policy Dashboard** — Instant overview of insurer, expiry, sum insured, and claim risk
