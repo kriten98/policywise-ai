@@ -175,37 +175,24 @@ export function UploadModal({ isOpen, onClose }: UploadModalProps) {
                     animate={{ opacity: 1, y: 0 }}
                   >
                     <div
-                      onClick={() => fileInputRef.current?.click()}
-                      onDrop={handleDrop}
-                      onDragOver={handleDragOver}
-                      onDragLeave={handleDragLeave}
-                      className={`border-2 border-dashed rounded-2xl p-8 text-center cursor-pointer transition-all ${
-                        isDragging
-                          ? "border-emerald-400 bg-emerald-50"
-                          : "border-gray-200 hover:border-emerald-300 hover:bg-emerald-50/50"
-                      }`}
+                      className="border-2 border-dashed border-gray-200 rounded-2xl p-8 text-center bg-gray-50 opacity-60 cursor-not-allowed"
+
                     >
                       <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center mx-auto mb-3">
                         <Upload size={24} className="text-emerald-600" />
                       </div>
                       <p className="text-gray-800 font-semibold text-sm">
-                        {isDragging ? "Drop your PDF here" : "Tap to upload PDF"}
+                        {isDragging ? "Drop your PDF here" : "Policy upload coming soon"}
                       </p>
                       <p className="text-gray-400 text-xs mt-1">
-                        or drag and drop your policy document
+                        Upload functionality will be available soon
                       </p>
                       <p className="text-gray-300 text-xs mt-3">
                         Max 10 MB · PDF only
                       </p>
                     </div>
 
-                    <input
-                      ref={fileInputRef}
-                      type="file"
-                      accept=".pdf"
-                      className="hidden"
-                      onChange={handleFileChange}
-                    />
+                
 
                     {/* Demo shortcut */}
                     <button
