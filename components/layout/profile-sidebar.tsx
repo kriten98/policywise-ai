@@ -30,7 +30,7 @@ const menuItems = [
     icon: Upload,
     label: "Upload New Policy",
     description: "Add or replace policy",
-    action: "upload",
+    action: "upload"
   },
   {
     icon: FileText,
