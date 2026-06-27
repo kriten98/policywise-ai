@@ -106,10 +106,7 @@ function RadialGauge({ score }: { score: number }) {
         out of 100
       </text>
 
-      {/* Labels */}
-      <text x="14" y="95" fontSize="8" fill="#9ca3af">Poor</text>
-      <text x="52" y="97" fontSize="8" fill="#9ca3af">Fair</text>
-      <text x="95" y="97" fontSize="8" fill="#9ca3af">Good</text>
+
     </svg>
   );
 }
